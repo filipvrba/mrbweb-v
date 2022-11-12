@@ -1,3 +1,3 @@
 #!/bin/bash
 
-v watch run lib/.
+v watch -o dist/mrbweb run lib/.
