@@ -21,5 +21,6 @@ fn new_app() &App {
     mut app := &App{}
     dir_path := os.resource_abs_path('./$public_dir')
     app.mount_static_folder_at(dir_path, public_dir)
+
     return app
 }
