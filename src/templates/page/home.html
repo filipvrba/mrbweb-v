@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mruby Web</title>
 
-        <link href="/public/bootstrap.css" rel="stylesheet">
+        <link href="/public/bootstrap.min.css" rel="stylesheet">
+        <link href="/public/style.css" rel="stylesheet">
     </head>
     <body>
         <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
@@ -15,7 +16,7 @@
                 <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
                 <form class="needs-validation" novalidate="" action="/" method="put">
                   <div class="form-floating">
-                    <textarea class="form-control" name="code" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 169px;">@code</textarea>
+                    <textarea class="form-control" name="code" oninput="auto_grow(this)" placeholder="Leave a comment here" id="floatingTextarea2">@code</textarea>
                     <label for="floatingTextarea2">MRuby</label>
                   </div>
                   </div>
@@ -38,6 +39,6 @@
             </main>
           </div>
 
-        <script src="/public/bootstrap.js"></script>
+        <script src="/public/main.js"></script>
     </body>
 </html>
